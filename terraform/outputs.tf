@@ -29,3 +29,11 @@ output "nat_gateway_id" {
 output "nat_gateway_public_ip" {
   value = module.vpc.nat_gateway_public_ip
 }
+
+output "public_ec2_sg_id" {
+  value = module.security_groups.public_ec2_sg_id
+}
+
+output "private_ec2_sg_id" {
+  value = module.security_groups.private_ec2_sg_id
+}
