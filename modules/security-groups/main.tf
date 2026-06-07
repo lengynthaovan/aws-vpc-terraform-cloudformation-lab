@@ -1,10 +1,10 @@
 resource "aws_security_group" "public_ec2" {
   name        = "${var.project_name}-public-ec2-sg"
-  description = "Allow SSH from user's IP"
+  description = "Allow SSH from user IP"
   vpc_id      = var.vpc_id
 
   ingress {
-    description = "SSH from user's IP"
+    description = "Allow SSH from user IP"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
@@ -30,7 +30,7 @@ resource "aws_security_group" "private_ec2" {
   vpc_id      = var.vpc_id
 
   ingress {
-    description     = "SSH from public EC2"
+    description     = "Allow SSH from public EC2 security group"
     from_port       = 22
     to_port         = 22
     protocol        = "tcp"
