@@ -36,7 +36,7 @@ variable "allowed_ssh_cidr" {
 variable "key_name" {
   description = "Existing AWS EC2 key pair name"
   type        = string
-  default     = "labsuser"
+  default     = "vockey"
 }
 
 variable "instance_type" {

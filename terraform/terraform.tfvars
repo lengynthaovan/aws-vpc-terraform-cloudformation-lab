@@ -5,7 +5,7 @@ public_subnet_cidr  = "10.0.1.0/24"
 private_subnet_cidr = "10.0.2.0/24"
 
 # Thay bằng IP public của máy bạn
-allowed_ssh_cidr = "116.108.90.195/32"
+allowed_ssh_cidr = "116.108.82.94/32"
 
 # Tên key pair trên AWS
 key_name = "vockey"
